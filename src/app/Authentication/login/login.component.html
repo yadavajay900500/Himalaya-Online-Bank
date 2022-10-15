@@ -1,0 +1,63 @@
+<!-- <form [formGroup]="signin" (ngSubmit)="OnSubmit(signin.value)">
+<div class="container" >
+    <div >
+       
+</div>
+</form> -->
+   <div class="main">  
+    <mat-grid-list class="container-1" cols="12"   rowHeight="20vh" >
+        <mat-grid-tile  colspan="6" rowspan="5">
+
+
+        </mat-grid-tile>
+        <mat-grid-tile  class="form" colspan="6" rowspan="5">
+          
+            <form  class="form=1" [formGroup]="signin" (ngSubmit)="OnSubmit(signin.value)">
+                <div>
+                    <h1>Please Login</h1>
+                    <hr>
+                </div>
+              
+                <div class=" form-group mb-3">
+                    <label for="class" class="class">Account No</label>
+                    <input type="number" class="form-control" formControlName="bankAccountNo" >
+                </div>
+        
+                <div class=" form-group mb-3">
+                    <label for="section" class="section">Mobile-No</label>
+                    <input type="mobile" class="form-control" formControlName="phone">
+                </div>
+                <div class=" form-group mb-3">
+                    <label for="password" class="class">password</label>
+                    <input type="password" class="form-control" formControlName="password" placeholder="enter you password">
+                </div>
+                <!-- <div class=" form-group mb-3">
+                    <label for="dateOfBirth" class="NAME">DATE OF BIRTH</label>
+                    <input type="date" placeholder="yyyy/mm/dd" class="form-control" formControlName="dateOfBirth">
+                </div> -->
+                <hr>
+                <div align="right" class=" form-group mb-5">
+                    <button type="submit" class="btn btn-primary" >SignIn</button>
+                    <!-- <input type="button" value="dashboard" (click)="navigation()" >
+                    <input type="button" value="admin" (click)="navigationadmin()" > -->
+                </div>
+                
+                <div class="form-group mb-6">
+                 <!-- <button value='/auth/forgetPassword' (click)="navigationforgetPassword()">Forget Password ?</button> -->
+                 <button routerLink="/auth/forgetPassword">Forget Password ?</button>
+                  </div>
+                <div class="form-group mb-6">
+                <span>If not have account please create new Account</span>
+                    <!-- <button value='/auth/forgetPassword' (click)="navigationforgetPassword()">Forget Password ?</button> -->
+                 <a routerLink="//signup">Sign UP</a>
+                  </div>
+           
+
+            </form>
+
+
+        </mat-grid-tile>
+
+    </mat-grid-list>
+
+</div>

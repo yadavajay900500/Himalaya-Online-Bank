@@ -1,0 +1,111 @@
+<!-- 
+<h2>Hello</h2>
+<mat-grid-list cols="12" rowHeight="6em" gutterSize="0">
+    <mat-card-title style="background-color: #4baa66;" colspan="4" rowspan="3"  >
+        <mat-card class="user-info-card">
+            <hr>
+            <mat-card-content>
+              <div>
+                  <p>ggggggggggggggggggg</p>
+              </div>
+            </mat-card-content>
+          </mat-card>
+    </mat-card-title>
+    <mat-card-title style="background-color: hsl(192, 53%, 37%);" colspan="8" rowspan="3"  >
+        <h1>Page Two works nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn </h1>
+
+    </mat-card-title>
+</mat-grid-list>
+
+
+
+
+
+
+ -->
+
+
+
+<mat-grid-list cols="8" rowHeight="6em">
+    <mat-grid-tile class="first" colspan="2" rowspan="4">
+        <mat-card class="user-info-card">
+            <div class="setting-manu">
+                <h1>Settings</h1>
+                <strong>
+                    <hr>
+                </strong>
+
+                <mat-selection-list #shoes [multiple]="false">
+                    <mat-list-option *ngFor="let setting of typesOfSetting" [value]="setting">
+                        {{setting}}
+                    </mat-list-option>
+                </mat-selection-list>
+
+            </div>
+
+        </mat-card>
+
+
+    </mat-grid-tile>
+    <mat-grid-tile colspan="6" rowspan="10">
+        <div class="details">
+            <div class="details-one">
+                <div class="details-name">
+                    <mat-card class="user-info-card">
+                        <div class="setting-manu">
+                            <h1>User Profile</h1>
+                            <strong>
+                                <hr>
+                            </strong>
+                            <div>
+                                <!-- <span class="mobile-text">Enter the code we just send on your mobile phone&nbsp;
+                                        <b class="text-danger">+91 {{data.phone}}</b></span> -->
+                                <div>
+                                    <label for="bankName" class="class">Name:</label>
+                                    <input type="text" class="form-control" placeholder="Enter your Name" #otp>
+
+                                    <!-- <input for="favorite-animal" [(ngModel)]="data.animal" > -->
+                                </div>
+                                <div>
+                                    <label for="bankName" class="class">New Email:</label>
+                                    <input type="text" class="form-control" placeholder="Enter your email" #otp>
+
+                                    <!-- <input for="favorite-animal" [(ngModel)]="data.animal" > -->
+                                </div>
+                                <div>
+                                    <div id="img">
+                                        <img src="../../../assets/images/unnamed.webp" alt="hugenerd" width="90"
+                                            height="90" class="rounded-circle">
+                                    </div>
+                                    <div id="button">
+                                        <button class="button-group" (click)="onSave(otp.value)">Save</button>
+                                        <!-- <button (click)="dialogRef.close()">Cancel</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+
+                <div class="deatils-contact">
+                    <mat-card class="user-info-card">
+                        <div class="setting-manu">
+                            <div id="button">
+                                <button class="button-group" (click)="onSave(otp.value)">Save</button>
+                                <!-- <button (click)="dialogRef.close()">Cancel</button> -->
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+
+            </div>
+            <div class="details-two">
+
+            </div>
+        </div>
+
+    </mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>

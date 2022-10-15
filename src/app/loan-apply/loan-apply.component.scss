@@ -1,0 +1,26 @@
+.another-header{
+    background-color: aquamarine;
+
+}
+
+.header-part{
+    border: 2px solid aqua;
+   
+}
+.header-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-top: 10px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }

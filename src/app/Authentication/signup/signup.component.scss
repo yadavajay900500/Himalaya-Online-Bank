@@ -1,0 +1,35 @@
+
+.container{
+    border: 5px solid blueviolet;
+    width:500px;
+    border-radius: 25px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: darkgrey;
+}
+.button-sty { 
+                height: 150px;
+                width: 150px;
+                background-color: #f7f7f7;;
+               background-image: url("https://upload.wikimedia.org/wikipedia/en/8/86/Avatar_Aang.png");
+                background-size:cover;
+               /* display: flex;
+                align-items: center;
+                justify-content: center;  */
+                object-fit: contain;
+                display: grid;
+                place-content: center;
+                border-radius: 91px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                overflow: hidden;
+            
+            
+            
+            }
+// it is used for hide the choose the file 
+            .button-sty input { 
+                            height: 0;
+                            width: 0;
+                        }
+                

@@ -1,0 +1,105 @@
+<!-- <h1>One page Works</h1> -->
+
+<div>
+
+    <mat-grid-list cols="15" rowHeight="300" gutterSize="0">
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="5" rowspan="1">
+        <div>
+          <mat-card class="example-card">
+            <mat-card-title-group>
+              <mat-card-title>Balance</mat-card-title>
+              <mat-card-subtitle>Saving</mat-card-subtitle>
+              <!-- <img mat-card-sm-image src="#" > -->
+            </mat-card-title-group>
+            <mat-card-content>
+              <strong> {{data[0].totalAmount | currency:'INR' }}</strong>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile>
+
+
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="4" rowspan="1">
+        <div>
+          <mat-card class="example-card">
+            <mat-card-title-group>
+              <mat-card-title>Spends</mat-card-title>
+              <mat-card-subtitle>Credit card</mat-card-subtitle>
+              <!-- <img mat-card-sm-image src="#" > -->
+            </mat-card-title-group>
+            <mat-card-content>
+              <b>{{data[0].totalAmount | currency:'INR' }}</b>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="6" rowspan="2">
+        <div>
+          <mat-card class="account-card">
+            <mat-card-title-group align="center">
+              <img mat-card-sm-image src="../../../assets/images/unnamed.webp" alt="hugenerd" width="50" height="50"
+                class="rounded-circle">
+            </mat-card-title-group>
+            <mat-card-content>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <!-- <img  > -->
+                </mat-list-item>
+               
+                <mat-list-item role="listitem">Name :{{data[0].name}}</mat-list-item>
+                <mat-list-item role="listitem">Email :{{data[0].email}}</mat-list-item>
+                <mat-list-item role="listitem">Phone :{{data[0].phone}}</mat-list-item>
+                <mat-list-item role="listitem">Account No :{{data[0].bankAccountNo}}</mat-list-item>
+                <mat-list-item role="listitem">IFSC Code :{{data[0].IFSCCODE}}</mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile>
+
+
+
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="5">
+        <div>
+          <mat-card class="example-card">
+            <mat-card-title-group>
+              <mat-card-title>Rewards</mat-card-title>
+              <mat-card-subtitle>All that you are earned from your Credit card</mat-card-subtitle>
+              <!-- <img mat-card-sm-image src="#" > -->
+            </mat-card-title-group>
+            <mat-card-content>
+              {{Rewards }} points
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="4">
+        <div>
+          <section class="example-section">
+            <!-- <h2 class="example-h2">Result</h2> -->
+            <h3>Credit Score</h3>
+            <!-- <mat-progress-spinner class="example-margin" [color]="color" [mode]="mode" [value]="value"
+              aria-label="Rating">
+              <div style="position:relative; top: -60px; left: 30px; color: black;">Rating</div>
+            </mat-progress-spinner> -->
+          </section>
+        </div>
+      </mat-grid-tile>
+
+
+      <mat-grid-tile style="background-color: rgb(96, 78, 160);" colspan="15" gutterSize="10">
+        <mat-card>
+          <mat-card-content>
+            <div>
+              <h1>Hello Every one</h1>
+              {{aa}}
+              <router-outlet></router-outlet>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+  </div>

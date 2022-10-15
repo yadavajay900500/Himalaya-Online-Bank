@@ -1,0 +1,56 @@
+
+*{
+  margin-top: 0px;
+ 
+}
+.footer {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+  list-style-type: none;
+
+
+  
+
+   
+   
+   
+  }
+.footer ul{
+  list-style-type: none;
+}
+.footer-icon{
+  
+  height:auto;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+.footer-icon i{
+  margin: 0 8px !important;
+}
+.app{
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.app-1{
+  visibility: visible; 
+  // animation-name: fadeInUp; 
+ display: flex;
+ flex-direction:column ;
+  background-color: black;
+   width: 204px; 
+   flex-direction: row;
+   text-align: center;
+ 
+}
+
+
+

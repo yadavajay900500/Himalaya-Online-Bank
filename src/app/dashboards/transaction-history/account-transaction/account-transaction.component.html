@@ -1,0 +1,36 @@
+
+      
+
+
+
+
+
+
+
+ 
+
+
+
+         <table>
+                <thead>
+                  <tr>
+                    <th>Sr.No</th>
+                    <th>TransactionID</th>
+                    <th>debitAmount</th>
+                    <th>creditAmount</th>
+                    <th>transactionDate</th>
+                    <th>transactionDescription</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let object of passbook[0].transactionHistory; index as i;">
+                    <td>{{i+1}}</td>
+                    <td>{{object.transactionId}}</td>
+                    <td>{{object.debitAmount | currency:'INR'}}</td>
+                    <td>{{object.creditAmount | currency:'INR'}}</td>
+                    <td>{{object.transactionDate |date :'short'}}</td>
+                    <td> {{object.transactionDescription}}</td>
+                  </tr>
+                </tbody>
+              </table>
+

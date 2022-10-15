@@ -1,0 +1,128 @@
+mat-sidenav {
+    width: 280px;
+    padding:15px;
+}
+.mat-drawer { 
+    background-color: #023075;
+    color:#fff
+}
+.main-content {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 200px 200px 200px; /*Make the grid smaller than the container*/
+  grid-template-rows: 150px 150px 150px;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+    
+   
+  
+    
+}
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+.A1{
+    position:fixed;
+}
+.sidenav-manu{
+    height: 100vh;
+    //position:fixed;
+    // transition: width 3s;
+    // transition-delay: 1s;
+    
+      
+        transition: width 1s ease-in-out;
+    
+}
+.tool{
+    background-color: aquamarine; 
+    transition: width 1s ease-in-out;
+
+    //  transition-timing-function: ease-in-out ;
+}
+
+.example-card {
+    
+   
+    width: 200px;
+    height: 150px;
+    margin-bottom: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
+.account-card {
+    
+   
+    width: auto;
+    height: auto;
+    margin-bottom: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    text-align: center;
+    
+  }
+
+  .sidebar-list > mat-list-item{
+    text-align: center;
+    color: aqua;
+  
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  .history-table{
+    width:100%;
+   
+  
+  }
+
+  .footer-icon{
+  display: flex;
+    height:auto;
+    width: 100%;
+    font-size: 30px;
+    text-align:center;
+   align-content: space-around;
+  
+
+  }
+
+  .example-margin {
+    margin: 0 10px;
+  }
+
+  .progress-section  {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
+  
+  }
+
+
+  .overlay{
+    height:100vh;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.286);
+    z-index:    10;
+    top:        0; 
+    left:       0; 
+    position:   fixed;
+  }
+
+
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }

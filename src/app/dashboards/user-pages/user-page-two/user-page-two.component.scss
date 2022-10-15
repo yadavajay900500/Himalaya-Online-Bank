@@ -1,0 +1,100 @@
+.user-info-card {
+    max-width: 100%;
+    height: 20em;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .title-div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .title-div > div{
+    margin: 10px;
+    padding: 10px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .deibit-card{
+    // background-color: #f1f3f8;
+    background-image: url('../../../../assets/images/Screenshot\ 2022-10-11\ 194806.png');
+    border-radius: 10px;
+    height: 254px;
+    width: 428px;
+    border: 2px solid rgb(196, 190, 180);
+    position: absolute;
+  }
+  #card-name{
+    position: absolute;
+    bottom: 23px;
+    right: 12px;
+
+  }
+ 
+  #master-card{
+    position: absolute;
+    bottom: 2px;
+    right: 9px;
+  }
+
+  #himalaya{
+    position: absolute;
+    top: 18px;
+    right: 17px;
+    font-size: 20px;
+
+  }
+
+  #card-no{
+    position: absolute;
+    top: 133px;
+    right: 115px;
+    font-size: 25px;
+
+  }
+
+  #expire{
+    position: absolute;
+    top: 186px;
+    right: 176px;
+  }
+
+  #expire-date{
+    position: absolute;
+    top: 186px;
+    right: 131px;
+  }
+
+  #cvv{
+    position: absolute; 
+    top: 186px;
+    right: 276px
+  }
+
+  #name{
+    position: absolute;
+    bottom: 5px;
+    left: 23px;
+  }
+
+  #debit{
+    position: absolute;
+    top: 81px;
+    left: 37px;
+  }
+#wifi{
+  position: absolute;
+  top: 91px;
+  right: 292px;
+  transform: rotate(90deg);
+}
+  #imm{
+    height: 51px;
+    width: 59px;
+    border-radius: 14px;
+  }

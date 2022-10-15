@@ -1,0 +1,42 @@
+
+      
+
+
+
+
+
+
+
+ 
+
+<h2>All Customer Bank Details</h2>
+<div class="main">
+         <table>
+            <thead>
+              <tr>
+                <th>Sr.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <!-- <th>Gender</th> -->
+                <th>Mobile No</th>
+                <th>DOB</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let object of newApplication; index as i;">
+                <td>{{i+1}}
+                </td>
+                <td>{{object.name}}</td>
+                <td>{{object.email }}</td>
+                <!-- <td>{{object.IFSCCODE }}</td> -->
+                <td>{{object.phone }}</td>
+                <td> {{object.DOB}}</td>
+
+                <td><button  mat-button (click)="openDialog(object)">veiw details</button></td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+

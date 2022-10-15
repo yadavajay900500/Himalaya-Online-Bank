@@ -1,0 +1,263 @@
+<!-- <h1>Hello, page Two Works</h1>
+
+
+<button type="button" class="btn btn-primary" (click)="showToster()">Show live toast</button>
+
+<app-user-page-three></app-user-page-three>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Avatar_Aang.png" 
+          class="rounded me-2" alt="...">
+    
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+<!-- <div>
+
+    <mat-grid-list cols="15" rowHeight="300" gutterSize="0">
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="5" rowspan="1">
+        <div>
+          <mat-card class="example-card">
+            <mat-card-title-group>
+              <mat-card-title>Balance</mat-card-title>
+              <mat-card-subtitle>Saving</mat-card-subtitle> -->
+<!-- <img mat-card-sm-image src="#" > -->
+<!-- </mat-card-title-group>
+            <mat-card-content>
+              <strong> {{data[0].totalAmount | currency:'INR' }}</strong>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile> -->
+
+
+<!-- <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="4" rowspan="1">
+        <div>
+          <mat-card class="example-card">
+            <mat-card-title-group>
+              <mat-card-title>Spends</mat-card-title>
+              <mat-card-subtitle>Credit card</mat-card-subtitle> -->
+<!-- <img mat-card-sm-image src="#" > -->
+<!-- </mat-card-title-group>
+            <mat-card-content>
+              <b>{{data[0].totalAmount | currency:'INR' }}</b>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="6" rowspan="2">
+        <div>
+          <mat-card class="account-card">
+            <mat-card-title-group align="center">
+              <img mat-card-sm-image src="../../../assets/images/unnamed.webp" alt="hugenerd" width="50" height="50"
+                class="rounded-circle">
+            </mat-card-title-group>
+            <mat-card-content>
+              <mat-list role="list">
+                <mat-list-item role="listitem"> -->
+<!-- <img  > -->
+<!-- </mat-list-item>
+               
+                <mat-list-item role="listitem">Name :{{data[0].name}}</mat-list-item>
+                <mat-list-item role="listitem">Email :{{data[0].email}}</mat-list-item>
+                <mat-list-item role="listitem">Phone :{{data[0].phone}}</mat-list-item>
+                <mat-list-item role="listitem">Account No :{{data[0].bankAccountNo}}</mat-list-item>
+                <mat-list-item role="listitem">IFSC Code :{{data[0].IFSCCODE}}</mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile> -->
+
+
+<!-- 
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="5">
+        <div>
+          <mat-card class="example-card">
+            <mat-card-title-group>
+              <mat-card-title>Rewards</mat-card-title>
+              <mat-card-subtitle>All that you are earned from your Credit card</mat-card-subtitle> -->
+<!-- <img mat-card-sm-image src="#" > -->
+<!-- </mat-card-title-group>
+            <mat-card-content>
+              {{Rewards }} points
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="4">
+        <div> 
+          <section class="example-section"> -->
+<!-- <h2 class="example-h2">Result</h2> -->
+<!-- <h3>Credit Score</h3>
+            <mat-progress-spinner class="example-margin" [color]="color" [mode]="mode" [value]="value"
+              aria-label="Rating">
+              <div style="position:relative; top: -60px; left: 30px; color: black;">Rating</div>
+            </mat-progress-spinner>
+          </section>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile style="background-color: rgb(226, 226, 190);" colspan="15" rowspan="2">
+        <div>
+          <mat-card class="history-table">
+            <mat-card-title-group>
+              <mat-card-title>Transaction History</mat-card-title>
+            </mat-card-title-group>
+            <mat-card-content>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Sr.No</th>
+                    <th>TransactionID</th>
+                    <th>debitAmount</th>
+                    <th>creditAmount</th>
+                    <th>transactionDate</th>
+                    <th>transactionDescription</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let object of data[0].transactionHistory; index as i;">
+                    <td>{{i+1}}</td>
+                    <td>{{object.transactionId}}</td>
+                    <td>{{object.debitAmount | currency:'INR'}}</td>
+                    <td>{{object.creditAmount | currency:'INR'}}</td>
+                    <td>{{object.transactionDate |date :'short'}}</td>
+                    <td> {{object.transactionDescription}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile style="background-color: rgb(96, 78, 160);" colspan="15" gutterSize="10">
+        <mat-card>
+          <mat-card-content>
+            <div>
+              <router-outlet></router-outlet>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+  </div>
+ 
+  <div>
+    <router-outlet></router-outlet>
+
+  </div> -->
+
+
+
+<h1>Welcome Back Ajay Yadav</h1>
+<mat-grid-list cols="12" rowHeight="6em" gutterSize="0">
+  <mat-grid-tile style="background-color: #f1f3f8;" colspan="6" rowspan="4">
+
+    <mat-card class="user-info-card">
+      <!-- <mat-card-title-group style="text-align: left;">
+        <img  mat-card-sm-image src="../../../assets/images/unnamed.webp" alt="hugenerd" width="30" height="30"
+          class="rounded-circle">
+        <mat-card-title class="">Ajay Yadav</mat-card-title>
+        <mat-card-subtitle>Small</mat-card-subtitle>
+
+      </mat-card-title-group> -->
+      <div class="title-div">
+        <div>
+          <img mat-card-sm-image src="../../../assets/images/unnamed.webp" alt="hugenerd" width="30" height="30"
+            class="rounded-circle">
+        </div>
+        <div style="position: relative;">
+          <div>Ajay Yadav</div>
+          <div style="display:inline-block; display: flex; flex-direction: row; padding-right: 5px;">
+            <div><mat-icon>phone</mat-icon></div>
+            <div>7309403724</div>
+          </div>
+
+          <div style="display:inline-block; display: flex; flex-direction: row; padding-right: 5px;" >
+           <div> <mat-icon>email</mat-icon></div>
+            <div>yadavajay900500@gmail.com</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <mat-card-content>
+        <div>
+          <strong>Address: </strong>{{longText}}
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="6" rowspan="4">
+    <div class="deibit-card">
+      <div id="debit">
+        <img id="imm" mat-card-sm-image src="../../../../assets/images/debit card-2.png" alt="hugenerd" >
+      </div>
+
+      <div id="himalaya">
+        <strong>HIMALAYA BANK</strong>
+      </div>
+
+      <div id="card-no">
+        <strong> 9988-8223-8712 </strong>
+      </div>
+      <div id="wifi">
+        <mat-icon>wifi</mat-icon>
+
+      </div>
+      <div id="expire">
+        EXPIRY:
+      </div>
+
+      <div id="expire-date">
+        <strong> 12/24</strong>
+      </div>
+
+      <div id="name">
+        <strong>AJAY YADAV</strong>
+      </div>
+
+      <div id="cvv">
+        CVV:996
+      </div>
+
+      <div id="master-card">
+        <strong> Master Card</strong>
+      </div>
+
+      <div id="card-name">
+        <img src="../../../../assets/New folder/partner-2.png" alt="hugenerd">
+      </div>
+
+    </div>
+
+  </mat-grid-tile>
+
+
+  <mat-grid-tile style="background-color:  #f1f3f8;" colspan="12" rowspan="4"> 2
+    <h1>Page Two works nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn </h1>
+
+  </mat-grid-tile>
+  <!-- <mat-grid-tile style="background-color:  #f1f3f8;" colspan="3"> 2</mat-grid-tile> -->
+
+
+</mat-grid-list>

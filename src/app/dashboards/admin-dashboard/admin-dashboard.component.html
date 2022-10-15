@@ -1,0 +1,180 @@
+<!-- <mat-sidenav-container>
+<mat-sidenav>
+Left Side
+
+
+  <mat-sidenav-content>
+    main contain is here
+  </mat-sidenav-content>
+</mat-sidenav>
+
+
+
+</mat-sidenav-container> -->
+
+
+
+
+
+<!-- <app-user-page-three></app-user-page-three> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<mat-sidenav-container class="sidenav-manu">
+  <mat-sidenav class="A1" mode="side" #sidenav opened position="start">
+    <mat-list class="sidebar-list">
+      <mat-list-item>
+        <mat-icon>home</mat-icon>
+        <a mat-button [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+      <mat-list-item>
+        <mat-icon>money</mat-icon>
+        <a mat-button [routerLink]="['applyNow']" routerLinkActive="router-link-active"  (click)="loanDetails()">
+        Apply Now
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon>money</mat-icon>
+        <a mat-button [routerLink]="['transferMoney']" routerLinkActive="router-link-active">
+          Transfer money
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+
+
+      <mat-list-item>
+        <mat-icon>money</mat-icon>
+        <a mat-button [routerLink]="['raecharge&bill']" routerLinkActive="router-link-active">
+          Recharge & Bill pay
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon>discount</mat-icon>
+        <a mat-button [routerLink]="['offers']" routerLinkActive="router-link-active">
+          Offers & Deals
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+
+      <mat-list-item>
+        <mat-icon>account_balance</mat-icon>
+        Account
+
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon>payment</mat-icon>
+        Pay UPI
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon>settings</mat-icon>
+        <a mat-button [routerLink]="['settings']" routerLinkActive="router-link-active"> Setting</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+
+      <div class="footer-icon">
+        <div>
+        <i class="bi bi-facebook"></i>
+        </div>
+        <div>
+          <i class="bi bi-instagram"></i>
+        </div>
+        <div>
+          <i class="bi bi-twitter"></i>
+        </div>
+        <div>
+          <i class="bi bi-whatsapp"></i>
+        </div>
+      </div>
+
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="tool">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <a mat-button [routerLink]="['/admin']" routerLinkActive="router-link-active"><strong>Dashboard</strong></a>
+
+      
+      <span class="toolbar-spacer"></span>
+      {{data[0].name}}
+
+
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <img src="../../../assets/images/unnamed.webp" alt="hugenerd" width="30" height="30" class="rounded-circle">
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['two']" routerLinkActive="router-link-active">
+
+
+          <mat-icon>person</mat-icon>
+          <!-- <i class="fs-4 bi-person"></i> -->
+          <span>
+
+            Account
+          </span>
+        </button>
+        <button mat-menu-item [routerLink]="['accountTransaction']" routerLinkActive="router-link-active">
+          <mat-icon>history</mat-icon>
+          <!-- <i class="fs-4 bi-gear-fill"></i> -->
+          <span>History</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>lock</mat-icon>
+          <!-- <i class="fs-4 bi-gear-fill"></i> -->
+          <span>Lock</span>
+        </button>
+        <button mat-menu-item [routerLink]="['settings']" routerLinkActive="router-link-active">
+          <mat-icon>settings</mat-icon>
+          <!-- <i class="fs-4 bi-gear-fill"></i> -->
+          <span>Settings</span>
+        </button>
+
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>perm_phone_msg</mat-icon>
+          <span>Help & Contact</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+
+          <span>logout</span>
+        </button>
+      </mat-menu>
+
+    </mat-toolbar>
+
+
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+
+    
+
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

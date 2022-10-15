@@ -1,0 +1,27 @@
+.main-container {
+    background-color: antiquewhite;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-a {
+    position: absolute;
+    text-align: center;
+    height: 606h;
+    width: 70vh;
+    background-color: aqua;
+    border: 2px solid blue;
+}
+
+form {
+    display: flex;
+    box-direction: row;
+}
+
+form>div {
+    padding: 10px;
+}

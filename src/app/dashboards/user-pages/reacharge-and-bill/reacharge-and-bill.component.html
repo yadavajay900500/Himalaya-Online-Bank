@@ -1,0 +1,178 @@
+<div class="main-div">
+    <h2>{{title}}</h2>
+    <div class="div-1">
+        <div>
+            <button mat-fab color="primary" (click)="mobileReach()">
+                <!-- <span class="material-icons"> phone_android </span> -->
+                Mobile
+            </button>
+        </div>
+        <div>
+            <button mat-fab color="primary"  (click)="DTH_Reacharge()">DTH</button>
+        </div>
+        <div><button mat-fab color="primary"  (click)="ElectricityReacharge()">Electricity</button></div>
+        <div>
+            <button mat-fab color="primary"  (click)="CreditCardreacharge()">
+                <!-- <span class="material-icons">credit_card</span> -->
+                Credit Card
+            </button>
+        </div>
+        <div><button mat-fab color="primary"  (click)="InsurenceBill()">
+                Insurance
+            </button></div>
+        <div>
+            <button mat-fab color="primary"  (click)="GasBill()">Pipes Gas</button>
+        </div>
+        
+       
+    </div>
+    <ng-container *ngIf="creditCard">
+        <div class="div-2">
+            
+            <div>
+                <label for="name">Credit card No: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Mobile: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Amount: </label>
+                <input id="name" type="text">
+            </div>
+            <div>
+                <button>Go</button>
+            </div>
+        </div>
+    </ng-container> 
+    <ng-container *ngIf="insurence">
+        <div class="div-2">
+            
+            <div>
+                <label for="name">Operator Name: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Policy: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Date of Birth: </label>
+                <input id="name" type="date">
+            </div>
+            <div>
+                <label for="name">Mobile NO: </label>
+                <input id="name" type="text">
+            </div>
+            <div>
+                <button>Go</button>
+            </div>
+        </div>
+    </ng-container> 
+    <ng-container *ngIf="gasbill">
+        <div class="div-2">
+            
+            <div>
+                <label for="name">Operator: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Mobile: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Amount: </label>
+                <input id="name" type="text">
+            </div>
+            <div>
+                <button>Go</button>
+            </div>
+        </div>
+    </ng-container> 
+    <ng-container *ngIf="DTH">
+        <div class="div-2">
+            
+            <div>
+                <label for="name">Operator: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Mobile: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Amount: </label>
+                <input id="name" type="text">
+            </div>
+            <div>
+                <button>Go</button>
+            </div>
+        </div>
+    </ng-container> 
+    <ng-container *ngIf="electricity">
+        <div class="div-2">
+            
+            <div>
+                <label for="name">Operator: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div>
+                <label for="name">Consumer No: </label>
+                <input id="name" type="text">
+            </div>
+            <div>
+                <button>Go</button>
+            </div>
+        </div>
+    </ng-container> 
+    <ng-container *ngIf="mobileReacharge">
+        <div class="div-2">
+            <div >
+                <label for="name">Mobile: </label>
+                <input id="name" type="text">
+            </div>
+            <div >
+
+                <select class="form-select" formControlName="bankName" aria-label="Default select example">
+                    <option selected>select operator</option>
+                    <option>Jio</option>
+                    <option>Airtel</option>
+                    <option>Vi</option>
+                    <option>Aj Network</option>
+
+                </select>
+            </div>
+            <div >
+                <select class="form-select" formControlName="bankName" aria-label="Default select example">
+                    <option selected>select loacation</option>
+                    <option value="LKG">Delhi NCR</option>
+                    <option value="UKG">Uttar Pradesh, East</option>
+                    <option value="1">Uttar Pradesh, West</option>
+                    <option value="2">Haryana</option>
+                    <option value="3">Himanchal Pradesh</option>
+                    <option value="4">Madhhya Pradesh</option>
+                </select>
+            </div>
+            <div >
+                <label for="name">Amount: </label>
+                <input id="name" type="text">
+            </div>
+            <div >
+                <button>Go</button>
+            </div>
+        </div>
+    </ng-container>
+   
+    
+
+</div>

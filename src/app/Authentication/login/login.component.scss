@@ -1,0 +1,45 @@
+
+.form{
+  background-image: url('../../../assets/images/new_bnner2.jpg');
+  height: 100vh;
+}
+.form-1{
+   
+    width:auto;
+    border-radius: 25px;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    justify-content:baseline;
+    border: 2px solid rgb(95, 42, 165);
+    background-color: darkgrey;
+   
+   
+   
+}
+
+
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box ;
+    border: 2px solid rgb(0, 255, 170);
+  }
+
+
+
+  // .main{
+   
+
+  // }
+
+  .container-1{
+    background-image: url('../../../assets/images/new_bnner.jpg');
+
+  }

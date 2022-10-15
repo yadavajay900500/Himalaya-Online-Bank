@@ -1,0 +1,95 @@
+
+// .first{
+//   background-color: aliceblue;
+// }
+// mat-grid-tile {
+//     background: lightblue;
+//   }
+
+  .setting-manu{
+    
+    max-width: max-content;
+    max-width: max-content;
+  }
+  
+  .user-info-card{
+    height: 400px;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .details{
+  display: flex;
+  // background-color: rgb(227, 241, 237);
+  flex-direction: column;
+  // border: 2px solid black;
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  position: absolute;
+  }
+
+  .details-one{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  bottom: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 800px;
+  width: 100%;
+  }
+
+  .details-two{
+  display: flex;
+  position: relative;
+  background-color: rgb(37, 85, 71);
+  flex-direction: column;
+  border: 2px solid rgb(155, 34, 34);
+  height: 100%;
+  width: 100%;
+  }
+
+  .details-name{
+    position:relative ;
+    height: 100%;
+    width: 100%;
+    margin: 0px 10px;
+    // background-color: antiquewhite;
+  }
+  .deatils-contact{
+    position:relative ;
+    height: 100%;
+    width: 100%;
+    margin: 0px 10px;
+
+    // background-color: antiquewhite;
+  }
+#button{
+  position: absolute;
+  bottom: 10px;
+  right: 4px;
+}
+#img{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+  .button-group {
+    background: #f37e20;
+    color: #fff;
+    border: 1px solid #f37e20;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12.5px 34px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+    transition: opacity .2s;
+    cursor: pointer;
+    width: fit-content;
+  }

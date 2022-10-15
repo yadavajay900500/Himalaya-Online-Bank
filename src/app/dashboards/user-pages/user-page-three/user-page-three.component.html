@@ -1,0 +1,161 @@
+<!-- <mat-grid-list cols="12" rowHeight="300" gutterSize="2px">
+    <mat-grid-tile style="background-color: yellow;" colspan="3" rowspan="2"> -->
+    
+<!-- <button type="button" class="btn btn-primary" (click)="showToster()">Show live toast</button> -->
+     
+    <!-- <h1>{{food}}</h1>
+    
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color: rgb(255, 0, 200);" colspan="6" rowspan="2"> 
+    
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color: rgb(55, 0, 255);" colspan="3"> 2</mat-grid-tile>
+    <mat-grid-tile style="background-color: rgb(201, 195, 223);" colspan="3"> 2</mat-grid-tile>
+      
+  
+  </mat-grid-list> -->
+
+
+
+
+  <!-- <mat-sidenav-container>
+<mat-sidenav>
+Left Side
+
+
+  <mat-sidenav-content>
+    main contain is here
+  </mat-sidenav-content>
+</mat-sidenav>
+
+
+
+</mat-sidenav-container> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<mat-sidenav-container class="sidenav-manu">
+    <mat-sidenav class="A1" mode="side" #sidenav opened position="start">
+      <mat-list class="sidebar-list">
+        <mat-list-item>
+          <mat-icon>home</mat-icon>
+          <a mat-button [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+  
+  
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>money</mat-icon>
+          <a mat-button [routerLink]="['accountTransaction']" routerLinkActive="router-link-active">
+            Transfer money
+          </a>
+  
+  
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>account_balance</mat-icon>
+          Account
+  
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>payment</mat-icon>
+          Pay UPI
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>settings</mat-icon>
+          Setting
+        </mat-list-item>
+        <mat-divider></mat-divider>
+  
+  
+        <div class="footer-icon">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+  
+        </div>
+  
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="tool">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        Home
+        <span class="toolbar-spacer"></span>
+        <!-- {{data[0].name}} -->
+  
+  
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <img src="../../../assets/images/unnamed.webp" alt="hugenerd" width="30" height="30" class="rounded-circle">
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item [routerLink]="['one']" routerLinkActive="router-link-active">
+  
+  
+            <mat-icon>person</mat-icon>
+            <!-- <i class="fs-4 bi-person"></i> -->
+            <span>
+  
+              Account
+            </span>
+          </button>
+          <button mat-menu-item [routerLink]="['two']" routerLinkActive="router-link-active">
+            <mat-icon>history</mat-icon>
+            <!-- <i class="fs-4 bi-gear-fill"></i> -->
+            <span>History</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>lock</mat-icon>
+            <!-- <i class="fs-4 bi-gear-fill"></i> -->
+            <span>Lock</span>
+          </button>
+          <button mat-menu-item [routerLink]="['three']" routerLinkActive="router-link-active">
+            <mat-icon>settings</mat-icon>
+            <!-- <i class="fs-4 bi-gear-fill"></i> -->
+            <span>Settings</span>
+          </button>
+  
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>logout</mat-icon>
+  
+            <span>logout</span>
+          </button>
+        </mat-menu>
+  
+      </mat-toolbar>
+  
+  
+
+  
+  <router-outlet></router-outlet>
+  
+  
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
+  <router-outlet></router-outlet>
+  

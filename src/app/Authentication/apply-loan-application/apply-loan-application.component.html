@@ -1,0 +1,40 @@
+<div class="main-container">
+   <div class="container-a">
+  <form  [formGroup]="loanApplication"  (ngSubmit)="applyLoanApplication()">
+   <div>
+    <input type="text" placeholder="Enter the name" name="name" formControlName="name" >
+    <span style="color: red;" *ngIf="name && name.invalid && name.touched">name is require</span>
+    <br>
+    <br>
+    <input type="text" placeholder="Enter the name" name="name" formControlName="name" >
+    <br>
+    <br>
+    <span style="color: red;" *ngIf="name && name.invalid && name.touched">name is require</span>
+    <br>
+    <br>
+    <input type="password" placeholder="Enter the password" name="password" formControlName="password">
+    <span  style="color: red; " *ngIf="password && password.invalid && password.touched"> password is require</span>
+    <br>
+    <br>
+    <button [disabled]="loanApplication.invalid">Submit</button>
+   </div>
+   <div>
+    <input type="text" placeholder="Enter the name" name="name" formControlName="name" >
+    <span style="color: red;" *ngIf="name && name.invalid && name.touched">name is require</span>
+    <br>
+    <br>
+    <input type="text" placeholder="Enter the name" name="name" formControlName="name" >
+    <span style="color: red;" *ngIf="name && name.invalid && name.touched">name is require</span>
+    <br>
+    <br>
+   </div>
+  </form>
+  <br>
+  <br>
+
+
+      Favorite Color: <input type="text" [(ngModel)]="favoriteColor">
+     
+      <h1>{{favoriteColor}}</h1>
+   </div>
+</div>

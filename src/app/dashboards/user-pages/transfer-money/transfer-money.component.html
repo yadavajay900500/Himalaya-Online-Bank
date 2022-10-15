@@ -1,0 +1,97 @@
+<div class="main-div">
+  <h2>Prepaid Mobile Recharge</h2>
+  <div class="div-1">
+
+    <div>
+      To Bank A/c
+      <button mat-icon-button aria-label="Example icon-button with a menu" (click)="bankAccount()">
+        <img src="../../../../assets/New folder/bank icon.png" alt="hugenerd" width="60" height="60"
+          class="rounded-circle">
+
+      </button>
+    </div>
+
+    <div>To Mobile
+      <button mat-icon-button aria-label="Example icon-button with a menu" (click)="mobileNo()">
+        <img src="../../../../assets/New folder/d14a4ca6fda82988c88229ffcb0230a6.jpg" alt="hugenerd" width="60"
+          height="60" class="rounded-circle">
+      </button>
+    </div>
+
+    <div>To UPI ID
+      <button mat-icon-button aria-label="Example icon-button with a menu" (click)="toUPI_ID()">
+        <img src="../../../../assets/New folder/UPI.png" alt="hugenerd" width="60" height="60" class="rounded-circle">
+      </button>
+    </div>
+
+    <div>To Self Account
+      <button mat-icon-button aria-label="Example icon-button with a menu" (click)="selfAccount()">
+        <img src="../../../assets/images/unnamed.webp" alt="hugenerd" width="60" height="60" class="rounded-circle">
+      </button>
+    </div>
+  </div>
+  <ng-container *ngIf="display">
+    <div class="account-details">
+      <div>
+        Name:
+        <input type="text" placeholder="enter name">
+      </div>
+
+      <div>Account Number:
+        <input type="number" placeholder="Enter Account No">
+      </div>
+
+      <div>IFSC Code:
+        <input type="text">
+      </div>
+      <div>Amount:
+        <input type="number">
+      </div>
+      <div>
+        <button>Go</button>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="show">
+    <div class="account-details">
+      <div>
+        Mobile No:
+        <input type="text" placeholder="enter name">
+      </div>
+      <div>Amount:
+        <input type="number">
+      </div>
+      <div>
+        <button>Go</button>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="showUPI">
+    <div class="account-details">
+      <div>
+        UPI ID:
+        <input type="text" placeholder="enter name">
+      </div>
+      <div>Amount:
+        <input type="number">
+      </div>
+      <div>
+        <button>Go</button>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="showSelf">
+    <div class="account-details">
+      <div>
+        My Account:
+        <input type="text" placeholder="enter name">
+      </div>
+      <div>Amount:
+        <input type="number">
+      </div>
+      <div>
+        <button>Go</button>
+      </div>
+    </div>
+  </ng-container>
+</div>
